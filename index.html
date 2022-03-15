@@ -5,71 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marca - Home</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="./index.html"href="">Titulo</a>
-            <a class="./producto.html"href="">Producto</a>
-            <a class="./quienes somos.html"href="">Quienes somos</a>
-            <a class="./contacto.html"href="">Contacto</a>
-            <a class="./ingresar.html"href="">Ingresar</a>
+    <header class="header">
+        <nav > 
+            <a class="header__marca"class="./index.html"href="" >Titulo</a>
+            <a class="header__bottons--element3" class="./producto.html"href="">Producto</a>
+            <a class="header__bottons--element2"class="./quienes somos.html"href="">Quienes somos</a>
+            <a class="header__bottons--element1"class="./contacto.html"href="">Contacto</a>
+            <a class="header__bottons"class="./ingresar.html"href="">Ingresar</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <div>
-                <h1>Los muebles perfectos para tu hogar</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
-                <!--- link boton --->
+            <div class="presentacion">
+                <h1 class="presentacion__title">Los muebles perfectos para tu hogar</h1>
+                <p class="presentacion__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
+                <button class="presentacion__button">Ver mas</button>    
             </div>
             <div>
                 <!--- imagen --->
             </div>
         </section>
 
-        <section> <!--- descripcion marca --->
-            <aside>
-                <!--- imagen --->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </aside>
-            <aside>
-                <!--- imagen --->
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </aside>
+        <section > <!--- descripcion marca --->
+            <div class="descripcion">
+                <aside >
+                    <!--- imagen --->
+                    <p class="descripcion__toppic" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </aside>
+                <aside >
+                    <!--- imagen --->
+                 <p class="descripcion__toppic" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </aside >
                 <aside>
-                <!--- imagen --->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </aside>
-
+                    <!--- imagen --->
+                    <p class="descripcion__toppic" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </aside>
+            </div>
+            
         </section>
         <section>
-            <h1>Best sellers</h1>
-            <div>
-                <!--- imagen --->
-                <h3>nombre producto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <!--- boton --->
-                <aside>
-                    <!--- imagen --->
-                    <h3>nombre producto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <!--- boton --->
+            <h1 class="presentacion__title--titlePage">Best sellers</h1>
+            <div class="productos">
+                <aside >
+                    <img class="productos__imagen" src="imagenes/silla_wishbone.png" alt="">
+                    <h3 class="productos__title">nombre producto</h3>
+                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="productos__button">Ver mas</button>
+                </aside>
+                <aside >
+                    <img class="productos__imagen" src="imagenes/silla_wishbone.png" alt="">
+                    <h3 class="productos__title" >nombre producto</h3>
+                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="productos__button">Ver mas</button>
                 </aside>
                 <aside>
-                    <!--- imagen --->
-                    <h3>nombre producto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <!--- boton --->
+                    <img class="productos__imagen" src="imagenes/silla_wishbone.png" alt="">
+                    <h3 class="productos__title" >nombre producto</h3>
+                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="productos__button">Ver mas</button>
                 </aside>
             </div>
         </section>
         <section>
-            <div>
-                <h1>Nueva coleccion</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
-                <!--- link boton --->
+            <div class="presentacion">
+                <h1 class="presentacion__title">Nueva coleccion</h1>
+                <p class="presentacion__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
+                <button class="presentacion__button">Ver mas</button>
             </div>
             <div>
                 <!--- imagen --->
@@ -77,7 +84,7 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="footer">
         <!--- redes sociales --->
         <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
     </footer>
