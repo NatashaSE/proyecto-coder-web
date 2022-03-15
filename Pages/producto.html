@@ -11,125 +11,167 @@
 
 <body>
     <header class="header">
-        <nav > 
-            <a class="header__marca" href="../index.html" >Marca</a>
-            <a class="header__bottons--element3" href="producto.html">Producto</a>
-            <a class="header__bottons--element2" href="quienes somos.html">Quienes somos</a>
-            <a class="header__bottons--element1" href="contacto.html">Contacto</a>
-            <a class="header__bottons" href="ingresar.html">Ingresar</a>
-        </nav>
+        <div class="header__contenedor">
+            <div>
+                <a class="header__marca" href="../index.html" >Marca</a>
+            </div>
+            <nav class="nav" > 
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="producto.html">Producto</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="quienes somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav__item"> 
+                        <a class="nav__enlace" href="ingresar.html">Ingresar</a>
+                    </li>
+                    <li >
+                        <a class="nav__enlace btn-close-sidebar" href="#">❌</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="presentacion" > <!--- Presentacion de collecion--->
-            <div class="presentacion__BloqueTexto">
-                <h1 class="presentacion__BloqueTexto--title">Collecion X</h1>
-                <p class="presentacion__BloqueTexto--descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
-                <button class="presentacion__BloqueTexto--button">Ver mas</button>    
-            </div>
-            <div>
-                <!--- imagenes escroleables --->
-            </div>
-        </section>
-
-        <section> <!--- productos --->
-            <div class="productos__collecion">
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title">nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside>
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title">nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside>
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
+        <section class="presentacion" > <!--- Presentacion de collection --->
+            <div class="presentacion__contenedor">
+                <div class="presentacion__left">
+                    <h1 class="presentacion__left">Collecion X</h1>
+                    <p class="presentacion__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
+                    <button class="presentacion__left">Ver mas</button>    
+                </div>
+                <div>
+                    <img class="presentacion__right" src="../Imagenes/ambiente sala.jpg" alt=""> <!--- imagenes escroleables --->
+                </div>
             </div>
         </section>
 
-        <section> <!--- Sillones --->
-            <h1 class="presentacion__title--titlePage">Sillones</h1>
-            <div class="productos">
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title">nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside>
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
+        <section class="CardVentaCollection"> <!--- productos --->
+            <div class="CardVentaCollection__contenedor">
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="CardVenta"> <!--- Sillones --->
+            <h1 class="CardVenta">Sillones</h1>
+            <div class="CardVenta__contenedor">
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wegner.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wegner.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wegner.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wegner.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
             </div>
         </section>
 
         <section > <!--Imagen con productos para sellecionar-->
-            <img class="ImagenProductos" src="../Imagenes/ambiente.jpg" alt="">
+            <img class="CardImagen" src="../Imagenes/ambiente seleccion productos.jpg" alt="">
         </section>
-        <section> <!--- Sillas --->
-            <h1 class="presentacion__title--titlePage">Sillas</h1>
-            <div class="productos">
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title">nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside >
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside>
-                    <img class="productos__imagen" src="../Imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
+
+        <section class="CardVenta"> <!--- Sillas --->
+            <h1 class="CardVenta">Sillas</h1>
+            <div class="CardVenta__contenedor">
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="../Imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
             </div>
         </section>
 
     </main>
     
     <footer class="footer">
-        <img class= "" src="" alt="Logo">
-        <!--- redes sociales --->
-        <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+        <div class="footer__contenedor">
+            <div>
+                <img class= "" src="" alt="Logo">
+            </div>
+            <div>
+                <!--- redes sociales --->
+            </div>
+            <div>
+                <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>

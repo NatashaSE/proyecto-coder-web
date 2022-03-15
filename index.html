@@ -11,86 +11,123 @@
 
 <body>
     <header class="header">
-        <nav > 
-            <a class="header__marca" href="./index.html" >Marca</a>
-            <a class="header__bottons--element3" href="./Pages/producto.html">Producto</a>
-            <a class="header__bottons--element2" href="./Pages/quienes somos.html">Quienes somos</a>
-            <a class="header__bottons--element1" href="./Pages/contacto.html">Contacto</a>
-            <a class="header__bottons" href="./Pages/ingresar.html">Ingresar</a>
-        </nav>
+        <div class="header__contenedor">
+            <div>
+                <a class="header__marca" href="./index.html" >Marca</a>
+            </div>
+            <nav class="nav" > 
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="./Pages/producto.html">Producto</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="./Pages/quienes somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="./Pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav__item"> 
+                        <a class="nav__enlace" href="./Pages/ingresar.html">Ingresar</a>
+                    </li>
+                    <li >
+                        <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="presentacion" > <!--- Presentacion de producto --->
-            <div class="presentacion__BloqueTexto">
-                <h1 class="presentacion__BloqueTexto--title">Los muebles perfectos para tu hogar</h1>
-                <p class="presentacion__BloqueTexto--descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
-                <button class="presentacion__BloqueTexto--button">Ver mas</button>    
-            </div>
-            <div>
-                <!--- imagen --->
+            <div class="presentacion__contenedor">
+                <div class="presentacion__left">
+                    <h1 class="presentacion__left">Los muebles perfectos para tu hogar</h1>
+                    <p class="presentacion__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
+                    <button class="presentacion__left">Ver mas</button>    
+                </div>
+                <div>
+                    <img class="presentacion__right" src="./Imagenes/ambiente.jpg" alt="">
+                </div>
             </div>
         </section>
 
-        <section > <!--- descripcion marca --->
-            <div class="descripcion">
-                <aside >
+        <section class="descripcion" > <!--- descripcion marca --->
+            <div class="descripcion__contenedor">
+                <div class="descripcion__item">
                     <!--- iconografia --->
                     <p class="descripcion__toppic" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </aside>
-                <aside >
+                </div>
+                <div >
                     <!--- iconografia --->
                  <p class="descripcion__toppic" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </aside >
-                <aside>
+                </div >
+                <div>
                     <!--- icnografia --->
                     <p class="descripcion__toppic" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </aside>
+                </div>
             </div>
 
         </section>
 
-        <section> <!--- mejores productos --->
-            <h1 class="presentacion__title--titlePage">Best sellers</h1>
-            <div class="productos">
-                <aside >
-                    <img class="productos__imagen" src="imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title">nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside >
-                    <img class="productos__imagen" src="imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
-                <aside>
-                    <img class="productos__imagen" src="imagenes/silla_wishbone.png" alt="">
-                    <h3 class="productos__title" >nombre producto</h3>
-                        <p class="productos__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="productos__button">Ver mas</button>
-                </aside>
+        <section class="CardVenta"> <!--- mejores productos --->
+            <h1 class="CardVenta">Best sellers</h1>
+            <div class="CardVenta__contenedor">
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
+                <div class="CardVenta__producto" >
+                    <img class="CardVenta__producto" src="imagenes/silla_wishbone.png" alt="">
+                    <h3 class="CardVenta__producto">nombre producto</h3>
+                        <p class="CardVenta__producto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="CardVenta__producto">Ver mas</button>
+                </div>
             </div>
         </section>
 
-        <section class="presentacion"> <!--- Presentacion de producto --->
-            <div class="presentacion__BloqueTexto">
-                <h1 class="presentacion__BloqueTexto--title">Nueva coleccion</h1>
-                <p class="presentacion__BloqueTexto--descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
-                <button class="presentacion__BloqueTexto--button">Ver mas</button>
-            </div>
-            <div>
-                <!--- imagen --->
+        <section class="presentacion" > <!--- Presentacion de collection --->
+            <div class="presentacion__contenedor--invertido">
+                <div>
+                    <img class="presentacion__right" src="./Imagenes/ambiente.jpg" alt="">
+                </div>
+                <div class="presentacion__left">
+                    <h1 class="presentacion__left">Nueva coleccion</h1>
+                    <p class="presentacion__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
+                    <button class="presentacion__left">Ver mas</button>    
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer class="footer">
-        <img class= "" src="" alt="Logo">
-        <!--- redes sociales --->
-        <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+        <div class="footer__contenedor">
+            <div>
+                <img class= "" src="" alt="Logo">
+            </div>
+            <div>
+                <!--- redes sociales --->
+            </div>
+            <div>
+                <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+            </div>
+
+        </div>
     </footer>
 
 </body>

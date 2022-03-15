@@ -11,13 +11,31 @@
 
 <body>
     <header class="header">
-        <nav > 
-            <a class="header__marca" href="../index.html" >Marca</a>
-            <a class="header__bottons--element3" href="producto.html">Producto</a>
-            <a class="header__bottons--element2" href="quienes somos.html">Quienes somos</a>
-            <a class="header__bottons--element1" href="contacto.html">Contacto</a>
-            <a class="header__bottons" href="ingresar.html">Ingresar</a>
-        </nav>
+        <div class="header__contenedor">
+            <div>
+                <a class="header__marca" href="../index.html" >Marca</a>
+            </div>
+            <nav class="nav" > 
+                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                <ul class="nav__lista" id="sidebar">
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="producto.html">Producto</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="quienes somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__enlace" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav__item"> 
+                        <a class="nav__enlace" href="ingresar.html">Ingresar</a>
+                    </li>
+                    <li >
+                        <a class="nav__enlace btn-close-sidebar" href="#">❌</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -51,9 +69,18 @@
     </main>
     
     <footer class="footer">
-        <img class= "" src="" alt="Logo">
-        <!--- redes sociales --->
-        <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+        <div class="footer__contenedor">
+            <div>
+                <img class= "" src="" alt="Logo">
+            </div>
+            <div>
+                <!--- redes sociales --->
+            </div>
+            <div>
+                <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>
