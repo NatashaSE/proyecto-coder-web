@@ -1,81 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresar</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/52cd9f4d8c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a class="./index.html"href="">Titulo</a>
-            <a class="./producto.html"href="">Producto</a>
-            <a class="./quienes somos.html"href="">Quienes somos</a>
-            <a class="./contacto.html"href="">Contacto</a>
-            <a class="./ingresar.html"href="">Ingresar</a>
+    <header class="header">
+        <nav > 
+            <a class="header__marca" href="../index.html" >Marca</a>
+            <a class="header__bottons--element3" href="producto.html">Producto</a>
+            <a class="header__bottons--element2" href="quienes somos.html">Quienes somos</a>
+            <a class="header__bottons--element1" href="contacto.html">Contacto</a>
+            <a class="header__bottons" href="ingresar.html">Ingresar</a>
         </nav>
     </header>
 
     <main>
-        <form action="log in">
-            <fieldset>
-                <legend>Ingresar</legend>
-                <div>
+        <form class= "presentacionIngresar" action="log in">
+            <fieldset >
+                <legend class="presentacionIngresar__titulo">Ingresar</legend>
+                <div class="presentacionIngresar__text">
                     <label for="username">Usuario</label>
-                    <input type="text">
+                    <input class="presentacionIngresar__Toppic" type="text">
                 </div>
-
-                <div>
+                <div class="presentacionIngresar__text">
                     <label for="Pasword">Pasword</label>
-                    <input type="password">
+                    <input class="presentacionIngresar__Toppic" type="password">
                 </div>
-                <div>
-                    <button>ingresar</button>
-                </div>
-            </fieldset>
-            <form action="registrarse">
-                <fieldset>
-                    <legend>registrarse</legend>
-                    <form action="log in">
-            
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="Apellido">Apellido</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email">
-                </div>
-                <div>
-                    <label for="email">Confirmar Email</label>
-                    <input type="email">
-                </div>
-                <div>
-                    <label for="username">Usuario</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="Pasword">Pasword</label>
-                    <input type="password">
-                </div>
-                <div>
-                    <label for="Pasword">Confirmar Pasword</label>
-                    <input type="password">
-                </div>
-                <div>
-                    <button>Crear cuenta</button>
+                <div>   
+                    <button class="productos__button">ingresar</button>
                 </div>
             </fieldset>
     
 
     </main>
     
-    <footer>
+    <footer class="footer">
+        <img class= "" src="" alt="Logo">
         <!--- redes sociales --->
         <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
     </footer>
