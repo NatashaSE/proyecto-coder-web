@@ -31,7 +31,7 @@
                         <a class="nav__enlace" href="ingresar.html">Ingresar</a>
                     </li>
                     <li >
-                        <a class="nav__enlace btn-close-sidebar" href="#">❌</a>
+                        <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
                     </li>
                 </ul>
             </nav>
@@ -41,31 +41,33 @@
     <main>
         <section> <!--- mapa de localizacion de locales --->
         </section>
-        <form class= "presentacionIngresar" action="">
-            <fieldset class="presentacionIngresar__text--contacto">
-                <legend class="presentacionIngresar__titulo">Contactanos</legend>
-                <div>
-                    <label for="name">Nombre</label>
-                    <input class="presentacionIngresar__Toppic"  type="text">
-                    <label for="apellido">Apellido</label>
-                    <input class="presentacionIngresar__Toppic" type="text">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input class="presentacionIngresar__Toppic" type="email">
-                </div>
-                <div>
-                    <label for="comentario">Comentario</label>
-                    <textarea class="presentacionIngresar__Toppic" name="comentario" id="" cols="50" rows="3"></textarea>
-                </div>
-                <div>
-                    <button class="productos__button">ingresar</button>
+    
+        <form class= "Ingresar" action="Comentar">
+            <fieldset class="Ingresar__contenedor">
+                <legend class="Ingresar__contenedor">Contactanos</legend>
+                <div class="Ingresar__datos--grid">
+                    <div style="grid-area: name;">
+                        <label for="name">Nombre</label>
+                        <input class="Ingresar__Toppic"  type="text">
+                    </div>
+                    <div style="grid-area: apellido;">
+                        <label for="apellido">Apellido</label>
+                        <input class="Ingresar__Toppic" type="text">
+                    </div>
+                    <div style="grid-area: email;">
+                        <label for="email">Email</label>
+                        <input class="Ingresar__Toppic" type="email">
+                    </div>
+                    <div style="grid-area: comentario;">
+                        <label for="comentario">Comentario</label>
+                        <textarea class="Ingresar__Toppic" name="comentario" id="" ></textarea>
+                    </div>
+                    <div style="grid-area: button;"> 
+                        <button class="Ingresar__datos--button">ingresar</button>
+                    </div>
                 </div>
             </fieldset>
-                 
-
         </form>
-        
     </main>
     
     <footer class="footer">
