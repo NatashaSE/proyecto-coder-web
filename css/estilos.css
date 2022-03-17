@@ -215,7 +215,6 @@ ul {
     display: grid;
     grid-template-columns: 3;
     align-content: center;
-    text-align: left;
 
     position: relative;
     
