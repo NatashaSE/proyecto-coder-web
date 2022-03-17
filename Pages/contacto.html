@@ -60,33 +60,34 @@
     <main>
         <section> <!--- mapa de localizacion de locales --->
         </section>
-    
-        <form class= "Ingresar" action="Comentar">
-            <fieldset class="Ingresar__contenedor">
-                <legend class="Ingresar__contenedor">Contactanos</legend>
-                <div class="Ingresar__datos--grid">
-                    <div style="grid-area: name;">
-                        <label for="name">Nombre</label>
-                        <input class="Ingresar__Toppic"  type="text">
+
+        <section class= "Ingresar" >
+            <div class="container-fluid py-4">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <form action="comentar">
+                            <fieldset class="Ingresar__contenedor">
+                                <legend class="Ingresar__contenedor">Contactanos</legend>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                                    </div>
+                                </div>
+                                <input type="email" class="form-control m-3" placeholder="Email" aria-label="Email">
+                                <input type="comentario" class="form-control m-3" placeholder="Comentario" aria-label="comentario">
+                                <button class="Ingresar__datos--button">ingresar</button>
+                            </fieldset>
+                        </form>
                     </div>
-                    <div style="grid-area: apellido;">
-                        <label for="apellido">Apellido</label>
-                        <input class="Ingresar__Toppic" type="text">
-                    </div>
-                    <div style="grid-area: email;">
-                        <label for="email">Email</label>
-                        <input class="Ingresar__Toppic" type="email">
-                    </div>
-                    <div style="grid-area: comentario;">
-                        <label for="comentario">Comentario</label>
-                        <textarea class="Ingresar__Toppic" name="comentario" id="" ></textarea>
-                    </div>
-                    <div style="grid-area: button;"> 
-                        <button class="Ingresar__datos--button">ingresar</button>
+                    <div class="col-12 col-md-6">
+                        <img class="presentacion__right" src="../Imagenes/ambiente.jpg" alt="">
                     </div>
                 </div>
-            </fieldset>
-        </form>
+            </div>
+        </section>
     </main>
     
     <footer class="footer">
