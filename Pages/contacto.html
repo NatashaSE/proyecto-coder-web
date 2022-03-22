@@ -61,7 +61,7 @@
         <section> <!--- mapa de localizacion de locales --->
         </section>
 
-        <section class= "Ingresar" >
+        <section class= "Ingresar" data-aos="fade-up" data-aos-duration="2000" >
             <div class="container-fluid py-4">
                 <div class="row">
                     <div class="col-12 col-md-6">
@@ -69,21 +69,27 @@
                             <fieldset class="Ingresar__contenedor">
                                 <legend class="Ingresar__contenedor">Contactanos</legend>
                                 <div class="row">
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-6 mb-3">
                                         <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
                                     </div>
-                                    <div class="col-12 col-md-6">
+                                    <div class="col-12 col-md-6 mb-3">
                                         <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
                                     </div>
                                 </div>
-                                <input type="email" class="form-control m-3" placeholder="Email" aria-label="Email">
-                                <input type="comentario" class="form-control m-3" placeholder="Comentario" aria-label="comentario">
-                                <button class="Ingresar__datos--button">ingresar</button>
+                                <div>
+                                    <input type="email" class="form-control mb-3" placeholder="Email" aria-label="Email">
+                                </div>
+                                <div>
+                                    <textarea class="form-control mb-3 resize-none" id="comentario" rows="3" placeholder="Comentario" aria-label="comentario"></textarea>
+                                </div>
+                                <div>
+                                    <button class="Ingresar__datos--button mb-3">ingresar</button>
+                                </div>
                             </fieldset>
                         </form>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img class="presentacion__right" src="../Imagenes/ambiente.jpg" alt="">
+                        <img class="presentacion__right img-fluid" src="../Imagenes/ambiente.jpg" alt="">
                     </div>
                 </div>
             </div>

@@ -60,7 +60,7 @@
     <main>
         
         <section class="presentacion" > <!--- Presentacion de collection --->
-            <div data-aos="fade-up" class="presentacion__contenedor">
+            <div class="presentacion__contenedor" data-aos="fade-up" data-aos-duration="2000">
                 <div class="presentacion__left">
                     <h1 class="presentacion__left">Collecion X</h1>
                     <p class="presentacion__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>
@@ -71,16 +71,20 @@
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../Imagenes/ambiente sala.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-item active ">
+                        <img src="../Imagenes/ambiente sala.jpg" class="d-block w-100 " alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="../Imagenes/ambiente.jpg" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
                         <img src="../Imagenes/ambiente sala.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../Imagenes/ambiente.jpg" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -93,16 +97,16 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section>                     
 
-        <section class="CardVentaCollection"> <!--- productos --->
+        <section data-aos="fade-up" data-aos-duration="2000" class="CardVentacollection"> <!--- productos --->
             <div class="container-fluid">
                 <div class="row">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <div class="CardVentaCollection__contenedor">
-                                <div class="card text-center border-light CardVenta__producto" >
+                            <div class="CardVentacollection__contenedor">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -110,60 +114,24 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">nombre producto</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <button class="CardVenta__producto">Ver mas</button>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="CardVentaCollection__contenedor">
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">nombre producto</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <button class="CardVenta__producto">Ver mas</button>
-                                    </div>
-                                </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">nombre producto</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <button class="CardVenta__producto">Ver mas</button>
-                                    </div>
-                                </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">nombre producto</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <button class="CardVenta__producto">Ver mas</button>
-                                    </div>
-                                </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -173,33 +141,105 @@
                             </div>
                           </div>
                           <div class="carousel-item">
-                            <div class="CardVentaCollection__contenedor">
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                            <div class="CardVentacollection__contenedor">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
-                                    <img src="../imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="CardVentacollection__contenedor">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="CardVentacollection__contenedor">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="../Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -222,7 +262,7 @@
             </div>
         </section>
 
-        <section class="CardVenta"> <!--- Sillones --->
+        <section data-aos="fade-up" data-aos-duration="2000" class="CardVenta"> <!--- Sillones --->
             <h1 class="CardVenta">Sillones</h1>
             <div class="CardVenta__contenedor">
                 <div class="CardVenta__producto" >
@@ -256,7 +296,7 @@
             <img class="CardImagen" src="../Imagenes/ambiente seleccion productos.jpg" alt="">
         </section>
 
-        <section class="CardVenta"> <!--- Mesas --->
+        <section data-aos="fade-up" data-aos-duration="2000" class="CardVenta"> <!--- Mesas --->
             <h1 class="CardVenta">Mesas</h1>
             <div class="container-fluid">
                 <div class="row">
@@ -264,7 +304,7 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <div class="CardVenta__contenedor">
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -272,7 +312,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -280,7 +320,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -288,7 +328,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -300,7 +340,7 @@
                           </div>
                           <div class="carousel-item">
                             <div class="CardVenta__contenedor">
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -308,7 +348,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -316,7 +356,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -324,7 +364,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -336,7 +376,7 @@
                           </div>
                           <div class="carousel-item">
                             <div class="CardVenta__contenedor">
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -344,7 +384,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -352,7 +392,7 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
@@ -360,8 +400,44 @@
                                         <button class="CardVenta__producto">Ver mas</button>
                                     </div>
                                 </div>
-                                <div class="card text-center border-light CardVenta__producto" >
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
                                     <img src="imagenes/silla_wishbone.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="CardVenta__contenedor">
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">nombre producto</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="CardVenta__producto">Ver mas</button>
+                                    </div>
+                                </div>
+                                <div class="card text-center border-light CardVenta__producto bg-transparent" >
+                                    <img src="imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">nombre producto</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

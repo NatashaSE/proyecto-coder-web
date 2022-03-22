@@ -84,8 +84,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-
-
 }
 
 
@@ -98,6 +96,12 @@ ul {
     padding: 1rem 0rem 1rem 1rem;
 }
 
+.presentacion--invertido {
+    background-color: white;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+
 .presentacion__contenedor {
     display: grid;
     grid-template-columns: repeat(2,50%);
@@ -106,7 +110,6 @@ ul {
 }
 
 .presentacion__contenedor--invertido {
-    background-color: white;
     display: grid;
     grid-template-columns: repeat(2,50%);
     justify-content: space-between;
@@ -121,13 +124,6 @@ ul {
     text-align: left;
 
     position: relative;
-}
-
-.presentacion__right {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
 }
 
 .rewards__item--img {
@@ -176,6 +172,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    height: 100%;
 }
 
 .descripcion__toppic {
@@ -184,23 +181,23 @@ ul {
     font-size: 14px;
     padding: 1rem;
     text-align: center;
-    width: 50%;
 }
 
 /* Mejores productos */
 
 .CardVenta {
     background-color: #F9F8F8;
-    padding: 1rem;
     padding: 2rem;  
 }
 
-.CardVenta__contenedor {    
+.CardVenta__contenedor {  
+    background-color: #F9F8F8;  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     justify-content: space-evenly;
     position: relative;
+    height: 450px;
 }
 
 .CardVenta h1 {
@@ -215,7 +212,7 @@ ul {
     display: grid;
     grid-template-columns: 3;
     align-content: center;
-
+    height: 100%;
     position: relative;
     
 }
@@ -267,8 +264,10 @@ ul {
 
 .Integrantes {
     background-color: #F9F8F8;
-    padding: 1rem;
     padding: 2rem; 
+    text-align: center;
+    align-items: center;
+    
 }
 
 .Integrantes h1 {
@@ -278,63 +277,30 @@ ul {
     font-style: italic; 
 }
 
-.Integrantes__contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-}
-
-.Integrantes__presentacion {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-
-    position: relative;
-}
-
-.Integrantes__presentacion img {
-    height: 200px;
-    width: 1o0px;
-
-}
-
-.Integrantes__presentacion h3 {
+.Integrantes h3 {
     margin: auto;
-    text-align: center;
     color: #2D2D2D;
     font-size: 16px;
-    font-style: bold; 
     padding-top: 10%;
-    width: 50%;
-}
-
-.Integrantes__presentacion p {
-    margin: auto;
-    color: #2D2D2D;
-    font-size: 14px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    width: 50%;
 }
 
 /* Page producto */
 
-.CardVentaCollection {
+.CardVentacollection {
     background-color: white; 
-    padding: 1rem;
     padding: 2rem;
    
 }
-.CardVentaCollection__contenedor {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+.CardVentacollection__contenedor {
+    background-color:  white;  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
     justify-content: space-evenly;
     position: relative;
+    height: 450px;
 }
+
 .CardImagen {
     width: 100%;
     height: 100%;
@@ -347,11 +313,13 @@ ul {
 .Ingresar {
     background-color: #F9F8F8;
     padding: 1rem;
-    align-items:stretch;
 }
 
 .Ingresar__contenedor {
-    align-items: center;
+    display: flex; 
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
 }
 
 .Ingresar__contenedor legend {
@@ -381,8 +349,7 @@ ul {
 }
 
 .Ingresar__datos--button {
-    margin-left: 3rem;
-    margin-top: 1rem;
+    margin: auto;
     border-color: #605F5F;
     border-radius: 22.5px;
     border-style: solid;
@@ -419,6 +386,10 @@ ul {
         padding: 1rem;
     }
 
+    .presentacion--invertido {
+        padding: 1rem;
+    }
+
     .presentacion__contenedor {
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
@@ -448,18 +419,16 @@ ul {
         margin: auto;
     }
 
-    .presentacion__right img {
-        max-width: 20px;
-    }
 
     /* CardVenta */
-    
+
     .CardVenta__contenedor {    
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
+        height: auto;
     }
     
-    .CardVenta__producto h3 {
+    .CardVenta__producto h3 , .card-title {
         font-size: 14px;
     }
     
@@ -471,10 +440,16 @@ ul {
         margin: auto;
     }
 
-    /* page Producto */
+    /* page Quienes somos */
 
-    .CardVentaCollection__contenedor {
-        flex-wrap: wrap;
+    /* !!invertir orden!! */
+
+    /* Page producto */
+
+    .CardVentacollection__contenedor {    
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        height: auto;
     }
 
     /* Page Ingresar */
@@ -541,21 +516,16 @@ ul {
     .presentacion__left p {
         font-size: 8px;
     }
-    
-    .presentacion__right img {
-        max-width: 20px;
-    }
 
-    .presentacion__left button {
-        height: 35px;
-        width: 100px;
+    .presentacion__left button , .CardVenta__contenedor button , .Ingresar__datos--button {
+        height: 32px;
+        width: 78px;
     }
 
     /* descripcion */
 
     .descripcion__contenedor {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px 100px 100px;
     }
 
     /* CardVenta */
@@ -563,18 +533,6 @@ ul {
     .CardVenta__contenedor {    
         grid-template-columns: repeat(1, 1fr);
         gap: 4rem;
-    }
-
-    .CardVenta__contenedor button {
-        height: 35px;
-        width: 100px;
-    }
-
-    /* PAge quienes somos */
-
-    .Integrantes__contenedor {
-        flex-wrap: wrap;
-        gap: 2rem;
     }
 
     /* Page Ingresar */
