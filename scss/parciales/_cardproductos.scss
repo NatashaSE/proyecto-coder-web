@@ -1,0 +1,102 @@
+/* Mejores productos mainpage */
+
+.CardVenta {
+    background-color: $colorfondo;
+    padding: 2rem;  
+
+    &__contenedor {  
+        background-color: $colorfondo;  
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        justify-content: space-evenly;
+        position: relative;
+        height: 450px;
+    }
+
+    h1 {
+        text-align: center;
+        color: $colortexto;
+        font-size: 16px;
+        font-style: bold italic; 
+    }
+
+    &__producto {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 3;
+        align-content: center;
+        height: 100%;
+        position: relative;
+
+        img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        h3 {
+            margin: auto;
+            text-align: center;
+            color: $colortexto;
+            font-size: 16px;
+            font-style: bold; 
+            padding-top: 10%;
+            width: 50%;
+        }
+
+        p {
+            margin: auto;
+            color: $colortexto;
+            font-size: 14px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            width: 50%;
+        }
+
+        button {
+            margin-top: 1rem;
+            border-color: $colorbuttom;
+            border-radius: 22.5px;
+            border-style: solid;
+        
+            height: 45px;
+            width: 109px;
+        
+            display: block;
+            color: $colorbuttom;
+            text-align: center;
+            font-size: 14px;
+        }
+
+    }
+
+}
+
+
+/* Page producto */
+
+.CardVentacollection {
+    background-color: white; 
+    padding: 2rem;
+
+    &__contenedor {
+        background-color:  white;  
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        justify-content: space-evenly;
+        position: relative;
+        height: 450px;
+    }
+   
+}
+
+.CardImagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

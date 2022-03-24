@@ -1,0 +1,47 @@
+/* Descripcion marca mainpage */
+
+.descripcion {
+    margin: 1rem;
+    background-color: white;
+    padding: 2rem;
+    
+    &__contenedor {   
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &__toppic {
+        margin: auto;
+        color: $colortexto;
+        font-size: 14px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+}
+
+/* page quienes somos */
+
+.Integrantes {
+    background-color: $colorfondo;
+    padding: 2rem; 
+    text-align: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        color: $colortexto;
+        font-size: 18px;
+        font-style: italic; 
+    }
+
+    h3 {
+        margin: auto;
+        color: $colortexto;
+        font-size: 16px;
+        padding-top: 10%;
+    }
+    
+}

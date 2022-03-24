@@ -1,0 +1,53 @@
+/* Header */
+
+.header{
+    background-color: white;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    
+    position: relative;
+
+    &__contenedor {
+        max-width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__marca {
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+    }
+}
+
+.nav__lista {
+    display: flex;
+}
+
+.nav__enlace {
+    color: $colortexto;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+
+    &:hover {
+        color: $colorbuttom;
+    }
+}
+
+/* Menu Lateral */
+
+.btn-open-sidebar {
+    display: none;
+}
+
+.nav__item--oculto {
+    display: none;
+}

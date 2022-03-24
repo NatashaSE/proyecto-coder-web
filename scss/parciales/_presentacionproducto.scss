@@ -1,0 +1,67 @@
+/* presentacion producto */
+
+.presentacion {
+    background-color: $colorfondo;
+    padding: 1rem 0rem 1rem 1rem;
+
+    &--invertido {
+        background-color: white;
+        padding: 1rem 0rem 1rem 1rem;
+    }
+
+    &__contenedor {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        justify-content: space-between;
+        position: relative;
+
+        &--invertido {
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            justify-content: space-between;
+            position: relative;
+        }
+    }
+
+    &__left {
+        margin-left: 3rem;
+        display: grid;
+        grid-template-columns: 3;
+        align-content: center;
+        text-align: left;
+    
+        position: relative;
+
+        h1 {
+            color: $colortexto;
+            font-size: 50px; 
+            padding: 1rem 3rem 1rem 1rem;
+        }
+
+        p {
+            color: $colortexto;
+            font-size: 14px;
+            padding: 1rem 3rem 1rem 1rem;
+        }
+
+        button {
+            margin-left: 3rem;
+            margin-top: 1rem;
+            border-color: #605F5F;
+            border-radius: 22.5px;
+            border-style: solid;
+        
+            height: 45px;
+            width: 109px;
+        
+            display: block;
+            color: $colorbuttom;
+            text-align: center;
+            font-size: 14px;
+        }
+    }   
+}
+
+.rewards__item--img {
+    padding: 0;
+}
