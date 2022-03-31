@@ -5,19 +5,15 @@
     background-color: white;
     padding: 2rem;
     
-    &__contenedor {   
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 0 auto;
+    &__contenedor {  
+        @include Displaygrid(repeat(3, 1fr), baseline)
         height: 100%;
     }
 
     &__toppic {
         margin: auto;
-        color: $colortexto;
-        font-size: 14px;
         padding: 1rem;
-        text-align: center;
+        @include Text(map-get($map: $color, $key: texto), 14px, normal, center)
     }
 
 }
@@ -25,22 +21,18 @@
 /* page quienes somos */
 
 .Integrantes {
-    background-color: $colorfondo;
+    background-color: map-get($map: $color, $key: fondo);
     padding: 2rem; 
     text-align: center;
     align-items: center;
 
     h1 {
-        text-align: center;
-        color: $colortexto;
-        font-size: 18px;
-        font-style: italic; 
+        @include Text(map-get($map: $color, $key: texto), 18px, italic, center) 
     }
 
-    h3 {
+    h2 {
         margin: auto;
-        color: $colortexto;
-        font-size: 16px;
+        @include Text(map-get($map: $color, $key: texto), 16px, normal, center)
         padding-top: 10%;
     }
     

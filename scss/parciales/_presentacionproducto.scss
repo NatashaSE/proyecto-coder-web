@@ -1,7 +1,7 @@
 /* presentacion producto */
 
 .presentacion {
-    background-color: $colorfondo;
+    background-color: map-get($map: $color, $key: fondo);
     padding: 1rem 0rem 1rem 1rem;
 
     &--invertido {
@@ -10,37 +10,29 @@
     }
 
     &__contenedor {
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-        justify-content: space-between;
+        @include Displaygrid( repeat(2,50%), space-between)
         position: relative;
 
         &--invertido {
-            display: grid;
-            grid-template-columns: repeat(2,50%);
-            justify-content: space-between;
-            position: relative;
+            @extend .presentacion__contenedor;
         }
     }
 
     &__left {
         margin-left: 3rem;
-        display: grid;
-        grid-template-columns: 3;
+        @include Displaygrid( 3, space-between)
         align-content: center;
         text-align: left;
     
         position: relative;
 
         h1 {
-            color: $colortexto;
-            font-size: 50px; 
+            @include Text(map-get($map: $color, $key: texto), 50px, normal, left)
             padding: 1rem 3rem 1rem 1rem;
         }
 
         p {
-            color: $colortexto;
-            font-size: 14px;
+            @include Text(map-get($map: $color, $key: texto),14px, normal, left)
             padding: 1rem 3rem 1rem 1rem;
         }
 
@@ -55,9 +47,7 @@
             width: 109px;
         
             display: block;
-            color: $colorbuttom;
-            text-align: center;
-            font-size: 14px;
+            @include Text(map-get($map: $color, $key: button), 14px, normal, center)
         }
     }   
 }

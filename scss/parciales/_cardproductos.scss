@@ -1,64 +1,48 @@
 /* Mejores productos mainpage */
 
 .CardVenta {
-    background-color: $colorfondo;
+    background-color: map-get($map: $color, $key: fondo);
     padding: 2rem;  
 
     &__contenedor {  
-        background-color: $colorfondo;  
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin: 0 auto;
-        justify-content: space-evenly;
+        background-color: map-get($map: $color, $key: fondo);  
+        @include Displaygrid(repeat(4, 1fr), space-evenly);
         position: relative;
         height: 450px;
     }
 
     h1 {
-        text-align: center;
-        color: $colortexto;
-        font-size: 16px;
-        font-style: bold italic; 
+        @include Text(map-get($map: $color, $key: texto), 16px, bold italic, center)
     }
 
     &__producto {
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 3;
+        @include Displaygrid(3, baseline);
         align-content: center;
         height: 100%;
         position: relative;
 
         img {
-            width: 50%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+            @include Image(50%, 100%)
         }
 
-        h3 {
+        h2 {
             margin: auto;
-            text-align: center;
-            color: $colortexto;
-            font-size: 16px;
-            font-style: bold; 
+            @include Text(map-get($map: $color, $key: texto), 16px, bold, center)
             padding-top: 10%;
             width: 50%;
         }
 
         p {
             margin: auto;
-            color: $colortexto;
-            font-size: 14px;
+            @include Text(map-get($map: $color, $key: texto), 14px, normal, center)
             padding-top: 1rem;
             padding-bottom: 1rem;
-            text-align: center;
             width: 50%;
         }
 
         button {
             margin-top: 1rem;
-            border-color: $colorbuttom;
+            border-color: map-get($map: $color, $key: button);
             border-radius: 22.5px;
             border-style: solid;
         
@@ -66,9 +50,7 @@
             width: 109px;
         
             display: block;
-            color: $colorbuttom;
-            text-align: center;
-            font-size: 14px;
+            @include Text(map-get($map: $color, $key: button), 14px, normal, center)
         }
 
     }
@@ -79,24 +61,16 @@
 /* Page producto */
 
 .CardVentacollection {
+    @extend .CardVenta;
     background-color: white; 
-    padding: 2rem;
 
     &__contenedor {
-        background-color:  white;  
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin: 0 auto;
-        justify-content: space-evenly;
-        position: relative;
-        height: 450px;
+        @extend .CardVenta__contenedor;
+        background-color:  white;
     }
    
 }
 
 .CardImagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    @include Image(100%, 100%)
 }

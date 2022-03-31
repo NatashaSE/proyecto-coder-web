@@ -23,7 +23,8 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
   .header__marca {
     text-decoration: none;
     letter-spacing: 0.1rem;
@@ -69,30 +70,32 @@ ul {
   .presentacion--invertido {
     background-color: white;
     padding: 1rem 0rem 1rem 1rem; }
-  .presentacion__contenedor {
+  .presentacion__contenedor, .presentacion__contenedor--invertido {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(2, 50%);
     justify-content: space-between;
     position: relative; }
-    .presentacion__contenedor--invertido {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      justify-content: space-between;
-      position: relative; }
   .presentacion__left {
     margin-left: 3rem;
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 3;
+    justify-content: space-between;
     align-content: center;
     text-align: left;
     position: relative; }
     .presentacion__left h1 {
       color: #2D2D2D;
       font-size: 50px;
+      font-style: normal;
+      text-align: left;
       padding: 1rem 3rem 1rem 1rem; }
     .presentacion__left p {
       color: #2D2D2D;
       font-size: 14px;
+      font-style: normal;
+      text-align: left;
       padding: 1rem 3rem 1rem 1rem; }
     .presentacion__left button {
       margin-left: 3rem;
@@ -104,8 +107,9 @@ ul {
       width: 109px;
       display: block;
       color: #605F5F;
-      text-align: center;
-      font-size: 14px; }
+      font-size: 14px;
+      font-style: normal;
+      text-align: center; }
 
 .rewards__item--img {
   padding: 0; }
@@ -117,14 +121,16 @@ ul {
   padding: 2rem; }
   .descripcion__contenedor {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: baseline;
     height: 100%; }
   .descripcion__toppic {
     margin: auto;
+    padding: 1rem;
     color: #2D2D2D;
     font-size: 14px;
-    padding: 1rem;
+    font-style: normal;
     text-align: center; }
 
 /* page quienes somos */
@@ -134,37 +140,40 @@ ul {
   text-align: center;
   align-items: center; }
   .Integrantes h1 {
-    text-align: center;
     color: #2D2D2D;
     font-size: 18px;
-    font-style: italic; }
-  .Integrantes h3 {
+    font-style: italic;
+    text-align: center; }
+  .Integrantes h2 {
     margin: auto;
     color: #2D2D2D;
     font-size: 16px;
+    font-style: normal;
+    text-align: center;
     padding-top: 10%; }
 
 /* Mejores productos mainpage */
-.CardVenta {
+.CardVenta, .CardVentacollection {
   background-color: #F9F8F8;
   padding: 2rem; }
-  .CardVenta__contenedor {
+  .CardVenta__contenedor, .CardVentacollection__contenedor {
     background-color: #F9F8F8;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
     position: relative;
     height: 450px; }
-  .CardVenta h1 {
-    text-align: center;
+  .CardVenta h1, .CardVentacollection h1 {
     color: #2D2D2D;
     font-size: 16px;
-    font-style: bold italic; }
+    font-style: bold italic;
+    text-align: center; }
   .CardVenta__producto {
-    margin: 0 auto;
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 3;
+    justify-content: baseline;
     align-content: center;
     height: 100%;
     position: relative; }
@@ -173,21 +182,22 @@ ul {
       height: 100%;
       object-fit: cover;
       display: block; }
-    .CardVenta__producto h3 {
+    .CardVenta__producto h2 {
       margin: auto;
-      text-align: center;
       color: #2D2D2D;
       font-size: 16px;
       font-style: bold;
+      text-align: center;
       padding-top: 10%;
       width: 50%; }
     .CardVenta__producto p {
       margin: auto;
       color: #2D2D2D;
       font-size: 14px;
+      font-style: normal;
+      text-align: center;
       padding-top: 1rem;
       padding-bottom: 1rem;
-      text-align: center;
       width: 50%; }
     .CardVenta__producto button {
       margin-top: 1rem;
@@ -198,21 +208,15 @@ ul {
       width: 109px;
       display: block;
       color: #605F5F;
-      text-align: center;
-      font-size: 14px; }
+      font-size: 14px;
+      font-style: normal;
+      text-align: center; }
 
 /* Page producto */
 .CardVentacollection {
-  background-color: white;
-  padding: 2rem; }
+  background-color: white; }
   .CardVentacollection__contenedor {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
-    justify-content: space-evenly;
-    position: relative;
-    height: 450px; }
+    background-color: white; }
 
 .CardImagen {
   width: 100%;
@@ -232,13 +236,15 @@ ul {
     .Ingresar__contenedor legend {
       color: #2D2D2D;
       font-size: 50px;
-      padding: 2rem;
+      font-style: bold;
       text-align: center;
-      font-style: bold; }
+      padding: 2rem; }
   .Ingresar__datos {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: baseline;
+    text-align: center;
     padding: 0.4rem 1rem 0.4rem 1rem; }
     .Ingresar__datos--grid {
       display: grid;
@@ -254,8 +260,9 @@ ul {
       width: 109px;
       display: block;
       color: #605F5F;
-      text-align: center;
-      font-size: 14px; }
+      font-size: 14px;
+      font-style: normal;
+      text-align: center; }
   .Ingresar__Toppic {
     margin: auto;
     border-color: #605F5F;
@@ -273,7 +280,7 @@ ul {
     padding: 1rem; }
     .presentacion--invertido {
       padding: 1rem; }
-    .presentacion__contenedor {
+    .presentacion__contenedor, .presentacion__contenedor--invertido {
       grid-template-columns: 1fr;
       grid-template-rows: 2fr; }
       .presentacion__contenedor--invertido {
@@ -284,14 +291,16 @@ ul {
       text-align: center; }
       .presentacion__left h1 {
         font-size: 20px;
-        padding: 1rem; }
+        padding: 1rem;
+        text-align: center; }
       .presentacion__left p {
         font-size: 16px;
-        padding: 1rem; }
+        padding: 1rem;
+        text-align: center; }
       .presentacion__left button {
         margin: auto; }
   /* CardVenta */
-  .CardVenta__contenedor {
+  .CardVenta__contenedor, .CardVentacollection__contenedor {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     height: auto; }
@@ -299,7 +308,7 @@ ul {
     font-size: 12px; }
   .CardVenta__producto button {
     margin: auto; }
-  .CardVenta__producto h3, .card-title {
+  .card-title, .CardVenta__producto h3 {
     font-size: 14px; }
   /* page Quienes somos */
   /* !!invertir orden!! */
@@ -349,14 +358,14 @@ ul {
     font-size: 18px; }
   .presentacion__left p {
     font-size: 8px; }
-  .presentacion__left button, .CardVenta__contenedor button, .Ingresar__datos--button {
+  .presentacion__left button, .CardVenta__contenedor button, .CardVentacollection__contenedor button, .Ingresar__datos--button {
     height: 32px;
     width: 78px; }
   /* descripcion */
   .descripcion__contenedor {
     grid-template-columns: 1fr; }
   /* CardVenta */
-  .CardVenta__contenedor {
+  .CardVenta__contenedor, .CardVentacollection__contenedor {
     grid-template-columns: repeat(1, 1fr);
     gap: 4rem; }
   /* Page Ingresar */

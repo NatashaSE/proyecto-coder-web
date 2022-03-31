@@ -1,7 +1,7 @@
 /* Page Ingresar y contacto */
 
 .Ingresar {
-    background-color: $colorfondo;
+    background-color: map-get($map: $color, $key: fondo);
     padding: 1rem;
 
     &__contenedor {
@@ -11,18 +11,13 @@
         align-content: center;
 
         legend {
-            color: $colortexto;
-            font-size: 50px; 
+            @include Text(map-get($map: $color, $key: texto), 50px, bold, center)
             padding: 2rem;
-            text-align: center;
-            font-style: bold;
         }
     }
 
     &__datos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include Displayflex(row, center, baseline, center);
         padding: 0.4rem 1rem 0.4rem 1rem;
 
         &--grid {
@@ -38,7 +33,7 @@
 
         &--button {
             margin: auto;
-            border-color: $colorbuttom;
+            border-color: map-get($map: $color, $key: button);
             border-radius: 22.5px;
             border-style: solid;
         
@@ -46,15 +41,13 @@
             width: 109px;
         
             display: block;
-            color: $colorbuttom;
-            text-align: center;
-            font-size: 14px;
+            @include Text(map-get($map: $color, $key: button), 14px, normal, center)
         }
     }
 
     &__Toppic {
         margin: auto;
-        border-color: $colorbuttom;
+        border-color: map-get($map: $color, $key: button);
         border-radius: 22.5px;
         border-style: solid;
         align-content: center;
