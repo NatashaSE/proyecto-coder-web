@@ -1,0 +1,33 @@
+/* Page Proyectos */
+
+.proyecto {
+    background-color: map-get($map: $color, $key: fondo);
+    padding: 1rem;
+    &__contenedor {
+        @include Displayflex(column, baseline, center, center)
+        margin: auto;
+        padding: 1rem;
+
+        h1 {
+            @include Text(map-get($map: $color, $key: texto), calc(1.375rem + 1.5vw), bold, center);
+            @media screen and (max-width: 1024px){
+                font-size: 18px;
+            }
+        }
+        h2 {
+            @include Text(map-get($map: $color, $key: texto), 1.5rem, normal, center);
+            padding: 0.5rem;
+            @media screen and (max-width: 1024px){
+                font-size: 18px;
+            }
+        }
+        p{
+            @include Text(map-get($map: $color, $key: texto), 0.96rem, normal, center);
+
+            @media screen and (max-width: 1024px){
+                font-size: 12px;
+            }
+        }
+        
+    }
+}

@@ -21,97 +21,97 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__contenedor">
-            <div>
-                <a class="header__marca" href="../index.html" >Marca</a>
+    <article>
+        <header class="header">
+            <div class="header__contenedor">
+                <div>
+                    <a class="" href="../index.html" >
+                        <img class="header__marca" src="../imagenes/logo_carieva.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav" > 
+                    <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                    <ul class="nav__lista" id="sidebar">
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <a class="nav__enlace dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Producto
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="nav__enlace" class="dropdown-item" href="../pages/producto.html">Collecion 2022</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Cocina</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Sala de estar</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__enlace" href="../pages/quienes somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__enlace" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav__item"> 
+                            <a class="nav__enlace" href="../pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li >
+                            <a class="nav__enlace btn-open-sidebar" href="#">x</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav" > 
-                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
-                <ul class="nav__lista" id="sidebar">
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                              Producto
-                            </a>
-                          
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <li><a class="nav__enlace" class="dropdown-item" href="./producto.html">Collecion 2022</a></li>
-                              <li><a class="nav__enlace" class="dropdown-item" href="#">Cocina</a></li>
-                              <li><a class="nav__enlace" class="dropdown-item" href="#">Sala de estar</a></li>
-                            </ul>
-                          </div>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="./quienes somos.html">Quienes somos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav__item"> 
-                        <a class="nav__enlace" href="./proyectos.html">Proyectos</a>
-                    </li>
-                    <li >
-                        <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section> <!--- mapa de localizacion de locales --->
-        </section>
-
-        <section class= "Ingresar" data-aos="fade-up" data-aos-duration="2000" >
-            <div class="container-fluid py-4">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <form action="comentar">
-                            <fieldset class="Ingresar__contenedor">
-                                <legend class="Ingresar__contenedor">Contactanos</legend>
-                                <div class="row">
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        </header>
+    
+        <main>
+            <section> <!--- mapa de localizacion de locales --->
+            </section>
+    
+            <section class= "Ingresar" data-aos="fade-up" data-aos-duration="2000" >
+                <div class="container-fluid py-4">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <form action="">
+                                <fieldset class="Ingresar__contenedor">
+                                    <legend class="Ingresar__contenedor">Contactanos</legend>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                                        </div>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                                        </div>
                                     </div>
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                                    <div>
+                                        <input type="email" class="form-control mb-3" placeholder="Email" aria-label="Email">
                                     </div>
-                                </div>
-                                <div>
-                                    <input type="email" class="form-control mb-3" placeholder="Email" aria-label="Email">
-                                </div>
-                                <div>
-                                    <textarea class="form-control mb-3 resize-none" id="comentario" rows="3" placeholder="Comentario" aria-label="comentario"></textarea>
-                                </div>
-                                <div>
-                                    <button class="Ingresar__datos--button mb-3">ingresar</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <img class="presentacion__right img-fluid" src="../Imagenes/ambiente.jpg" alt="ambiente sala">
+                                    <div>
+                                        <textarea class="form-control mb-3 resize-none" id="comentario" rows="3" placeholder="Comentario" aria-label="comentario"></textarea>
+                                    </div>
+                                    <div>
+                                        <button class="Ingresar__datos--button mb-3">ingresar</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid" src="../Imagenes/ambiente.jpg" alt="ambiente sala">
+                        </div>
                     </div>
                 </div>
+            </section>
+        </main>
+        
+        <footer class="footer"> 
+            <div class="footer__contenedor" >
+                <div>
+                    <img class="header__marca" src="../imagenes/logo_carieva.png" alt="Logo">
+                </div>
+                <div>
+                    <p class="footer__contenedor">© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+                </div>
             </div>
-        </section>
-    </main>
+        </footer>
+    </article>
     
-    <footer class="footer">
-        <div class="footer__contenedor">
-            <div>
-                <img class= "" src="" alt="Logo">
-            </div>
-            <div>
-                <!--- redes sociales --->
-            </div>
-            <div>
-                <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
-            </div>
-
-        </div>
-    </footer>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -6,8 +6,21 @@
     padding: 2rem;
     
     &__contenedor {  
-        @include Displaygrid(repeat(3, 1fr), baseline)
+        @include Displaygrid(repeat(3, 1fr), center)
         height: 100%;
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    &__item {
+        @include Displayflex(column, center, center, center)
+        padding: 1rem;
+
+        i {
+            font-size: 2rem;
+        }
     }
 
     &__toppic {

@@ -7,27 +7,41 @@
     
     position: relative;
 
+    @media screen and (max-width: 1024px){
+        height: auto;
+    }
+
     &__contenedor {
         max-width: 90%;
         margin: 0 auto;
         height: 100%;
         @include Displayflex(row, space-between, center, center);
+
     }
 
     &__marca {
-        text-decoration: none;
-        letter-spacing: 0.1rem;
-        padding: 0.5rem 1rem;
         display: inline-block;
+        @include Image(auto, 3rem)
+        padding: 0.5rem 1rem;
+
+        @media screen and (max-width: 1024px){
+            height: 2.5rem;
+        }
     }
 }
 
 .nav__lista {
     display: flex;
+
+    @media screen and (max-width: 600px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 
 .nav__enlace {
     color: map-get($map: $color, $key: texto);
+    font-size: 0.96rem;
     text-decoration: none;
     letter-spacing: 0.1rem;
     padding: 0.5rem 1rem;
@@ -37,7 +51,36 @@
         color: map-get($map: $color, $key: button);
     }
 }
+/* Menu producto */
 
+.nav-link {
+    color: map-get($map: $color, $key: texto);
+
+    &:hover {
+        color: map-get($map: $color, $key: button);
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 12rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: map-get($map: $color, $key: texto);
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    letter-spacing: 0.1rem;
+    &:hover {
+        color: map-get($map: $color, $key: button);
+    }
+}
 /* Menu Lateral */
 
 .btn-open-sidebar {

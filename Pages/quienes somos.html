@@ -21,115 +21,116 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__contenedor">
-            <div>
-                <a class="header__marca" href="../index.html" >Marca</a>
-            </div>
-            <nav class="nav" > 
-                <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
-                <ul class="nav__lista" id="sidebar">
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                              Producto
-                            </a>
-                          
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <li><a class="nav__enlace" class="dropdown-item" href="./producto.html">Collecion 2022</a></li>
-                              <li><a class="nav__enlace" class="dropdown-item" href="#">Cocina</a></li>
-                              <li><a class="nav__enlace" class="dropdown-item" href="#">Sala de estar</a></li>
-                            </ul>
-                          </div>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="./quienes somos.html">Quienes somos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav__item"> 
-                        <a class="nav__enlace" href="./proyectos.html">Proyectos</a>
-                    </li>
-                    <li >
-                        <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main> 
-        <section class="presentacion" > <!--- Nuestra historia --->
-            <div data-aos="fade-up" data-aos-duration="3000" class="presentacion__contenedor">
-                <div class="presentacion__left">
-                    <h1 class="presentacion__left">Nuestra Historia</h1>
-                    <p class="presentacion__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eumLorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eumLorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p>  
-                </div>
+    <article>
+        <header class="header">
+            <div class="header__contenedor">
                 <div>
-                    <img class="presentacion__right img-fluid" src="../Imagenes/ambiente.jpg" alt="ambiente sala">
+                    <a class="" href="../index.html" >
+                        <img class="header__marca" src="../imagenes/logo_carieva.png" alt="logo">
+                    </a>
                 </div>
+                <nav class="nav" > 
+                    <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
+                    <ul class="nav__lista" id="sidebar">
+                        <li class="nav__item">
+                            <div class="dropdown">
+                                <a class="nav__enlace dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Producto
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="nav__enlace" class="dropdown-item" href="../pages/producto.html">Collecion 2022</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Cocina</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Sala de estar</a></li>
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__enlace" href="../pages/quienes somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__enlace" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav__item"> 
+                            <a class="nav__enlace" href="../pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li >
+                            <a class="nav__enlace btn-open-sidebar" href="#">x</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-
-        <section class="presentacion--invertido" > <!--- Nuestros Objetivos --->
-            <div data-aos="fade-up" data-aos-duration="3000" class="presentacion__contenedor--invertido">
-                <div>
-                    <img class="presentacion__right img-fluid" src="../Imagenes/ambiente.jpg" alt="">
-                </div>
-                <div class="presentacion__left">
-                    <h1 class="presentacion__left">Nuestra Objetivos</h1>
-                    <p class="presentacion__left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eumLorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eumLorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio quibusdam ut quae qui amet, porro voluptate adipisci dignissimos. Nesciunt obcaecati, qui necessitatibus quia id quidem autem aut aliquam eum.</p> 
-                </div>
-            </div>
-        </section>
-
-        <section class="Integrantes" data-aos="fade-up" data-aos-duration="2000"> <!--- Integrantes --->
-            <h1 class="Integrantes">Quienes somos</h1>
-            <div class="container-fluid" >
-                <div class="row">
-                    <div class="col-12 col-md-4 mb-2">
-                        <img class="Integrante img-fluid" src="../Imagenes/mujer-integrante.jpg" alt="persona">
-                        <div class="card-body">
-                            <h2 class="Integrantes">Nombre Apellido</h2>
-                            <p class="card-text">Co-founder</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-2">
-                        <img class="Integrante img-fluid" src="../Imagenes/mujer-integrante.jpg" alt="persona">
-                        <div class="card-body">
-                            <h2 class="Integrantes">Nombre Apellido</h2>
-                            <p class="card-text">Co-founder</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-2">
-                        <img class="Integrante img-fluid" src="../Imagenes/mujer-integrante.jpg" alt="persona">
-                        <div class="card-body">
-                            <h2 class="Integrantes">Nombre Apellido</h2>
-                            <p class="card-text">Co-founder</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
+        </header>
     
-    <footer class="footer">
-        <div class="footer__contenedor">
-            <div>
-                <img class= "" src="" alt="Logo">
+        <main> 
+            <section class="presentacion" > <!--- Nuestra historia --->
+                <div data-aos="fade-up" data-aos-duration="3000" class="presentacion__contenedor">
+                    <div class="presentacion__left">
+                        <h1 class="presentacion__left">Como empezamos</h1>
+                        <p class="presentacion__left">Carieva se creó en una habitación libre con muchas ideas geniales y sin espacio para muestras de telas. Después de muchas noches de intercambio de ideas y colaboración, el equipo formado por madre y hijas, Carolina y Eva decidieron tomar lo que era un pequeño negocio para una ama de casa y convertirlo en algo mucho más.
+                        </p>  
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="../Imagenes/ambiente.jpg" alt="ambiente sala">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="presentacion--invertido" > <!--- Nuestros Objetivos --->
+                <div data-aos="fade-up" data-aos-duration="3000" class="presentacion__contenedor--invertido">
+                    <div>
+                        <img class="img-fluid" src="../Imagenes/ambiente.jpg" alt="">
+                    </div>
+                    <div class="presentacion__left">
+                        <h1 class="presentacion__left">El equipo perfecto</h1>
+                        <p class="presentacion__left">Después de graduarse en Decoracion de interiores y creado la casa de sus sueños, Carolina se dio cuenta de que lo que realmente quería hacer era diseñar. Después de algunos semestres rediseñando y ayudando amigos y familiares con su hija, que estudia arquitectura, sus estéticas brillantes y limpia había atraído una lista de espera de clientes.  </p> 
+                    </div>
+                </div>
+            </section>
+    
+            <section class="Integrantes" data-aos="fade-up" data-aos-duration="2000"> <!--- Integrantes --->
+                <h1 class="Integrantes">Quienes somos</h1>
+                <div class="container-fluid" >
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-2">
+                            <img class="Integrante img-fluid" src="../Imagenes/mujer-integrante.jpg" alt="persona">
+                            <div class="card-body">
+                                <h2 class="Integrantes">Carolina Maitan</h2>
+                                <p class="card-text">Co-founder</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-2">
+                            <img class="Integrante img-fluid" src="../Imagenes/mujer-integrante.jpg" alt="persona">
+                            <div class="card-body">
+                                <h2 class="Integrantes">Eva Maitan</h2>
+                                <p class="card-text">Co-founder</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-2">
+                            <img class="Integrante img-fluid" src="../Imagenes/mujer-integrante.jpg" alt="persona">
+                            <div class="card-body">
+                                <h2 class="Integrantes">Renata Feldia</h2>
+                                <p class="card-text">marketing digital</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+    
+        </main>
+        
+        <footer class="footer"> 
+            <div class="footer__contenedor" >
+                <div>
+                    <img class="header__marca" src="../imagenes/logo_carieva.png" alt="Logo">
+                </div>
+                <div>
+                    <p class="footer__contenedor">© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
+                </div>
             </div>
-            <div>
-                <!--- redes sociales --->
-            </div>
-            <div>
-                <p>© 2022 Natasha Sarmiento Etura, All rights reserved.</p>
-            </div>
-
-        </div>
-    </footer>
+        </footer>
+    </article>
+    
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
