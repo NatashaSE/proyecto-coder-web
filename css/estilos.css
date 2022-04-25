@@ -132,7 +132,7 @@ article {
 /* presentacion producto */
 .presentacion {
   background-color: #F9F8F8;
-  padding: 1rem 0rem 1rem 1rem; }
+  padding: 1rem 1rem 1rem 1rem; }
   @media screen and (max-width: 600px) {
     .presentacion {
       padding: 1rem; } }
@@ -260,10 +260,10 @@ article {
     font-style: normal;
     text-align: center; }
 
-/* page quienes somos */
+/* page nosotros */
 .Integrantes {
   background-color: #F9F8F8;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   align-items: center; }
   .Integrantes h1 {
@@ -271,13 +271,18 @@ article {
     font-size: 18px;
     font-style: italic;
     text-align: center; }
+    @media screen and (max-width: 600px) {
+      .Integrantes h1 {
+        font-size: 16px; } }
   .Integrantes h2 {
     margin: auto;
     color: #2D2D2D;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-style: normal;
-    text-align: center;
-    padding-top: 10%; }
+    text-align: center; }
+    @media screen and (max-width: 600px) {
+      .Integrantes h2 {
+        font-size: 18px; } }
 
 /* Carosel productos */
 .CardVenta, .CardVentacollection {
@@ -479,8 +484,7 @@ article {
 
 /* Page Proyectos */
 .proyecto {
-  background-color: #F9F8F8;
-  padding: 1rem; }
+  background-color: #F9F8F8; }
   .proyecto__contenedor {
     display: flex;
     flex-direction: column;
@@ -488,7 +492,7 @@ article {
     align-items: center;
     text-align: center;
     margin: auto;
-    padding: 1rem; }
+    padding-bottom: 1rem; }
     .proyecto__contenedor h1 {
       color: #2D2D2D;
       font-size: calc(1.375rem + 1.5vw);
@@ -499,7 +503,7 @@ article {
           font-size: 18px; } }
     .proyecto__contenedor h2 {
       color: #2D2D2D;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-style: normal;
       text-align: center;
       padding: 0.5rem; }
@@ -514,8 +518,10 @@ article {
       @media screen and (max-width: 1024px) {
         .proyecto__contenedor p {
           font-size: 12px; } }
+    .proyecto__contenedor img {
+      border-radius: 1rem; }
 
-/* Page Ingresar y contacto */
+/* Page contacto */
 .Ingresar {
   background-color: #F9F8F8;
   padding: 1rem; }
@@ -526,52 +532,36 @@ article {
     align-content: center; }
     .Ingresar__contenedor legend {
       color: #2D2D2D;
-      font-size: 50px;
-      font-style: bold;
+      font-size: calc(1.375rem + 1.5vw);
+      font-style: normal;
       text-align: center;
       padding: 2rem; }
-  .Ingresar__datos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    text-align: center;
-    padding: 0.4rem 1rem 0.4rem 1rem; }
-    .Ingresar__datos--grid {
-      display: grid;
-      grid-template-areas: "name apellido" "email email" "comentario comentario" "button button";
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr; }
-    .Ingresar__datos--button {
-      margin: auto;
-      border-color: #605F5F;
-      border-radius: 22.5px;
-      border-style: solid;
-      height: 45px;
-      width: 109px;
-      display: block;
-      color: #605F5F;
-      font-size: 14px;
-      font-style: normal;
-      text-align: center; }
-  .Ingresar__Toppic {
+  .Ingresar__datos--button {
     margin: auto;
     border-color: #605F5F;
     border-radius: 22.5px;
     border-style: solid;
-    align-content: center; }
+    height: 45px;
+    width: 109px;
+    display: block;
+    color: #605F5F;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center; }
+    @media screen and (max-width: 600px) {
+      .Ingresar__datos--button {
+        height: 32px;
+        width: 78px; } }
+  @media screen and (max-width: 600px) {
+    .Ingresar img {
+      display: none; } }
 
 /* Media Querys */
 /* TABLET */
 @media screen and (max-width: 1024px) {
   /* CardVenta */
   .card-title {
-    font-size: 14px; }
-  /* page Quienes somos */
-  /* !!invertir orden!! */
-  /* Page Ingresar */
-  .Ingresar__contenedor legend {
-    font-size: 40px; } }
+    font-size: 14px; } }
 
 /* MOBILE */
 @media screen and (max-width: 600px) {
@@ -579,16 +569,4 @@ article {
   #sidebar:target {
     transform: translateX(0); }
   .nav__item--oculto {
-    display: block; }
-  .Ingresar__datos--button {
-    height: 32px;
-    width: 78px; }
-  /* Page Ingresar */
-  .Ingresar__contenedor legend {
-    font-size: 30px; }
-  .Ingresar__datos--grid {
-    grid-template-areas: "name name" "apellido apellido" "email email" "comentario comentario" "button button";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr; }
-  .Ingresar__Toppic textarea {
-    columns: 20; } }
+    display: block; } }

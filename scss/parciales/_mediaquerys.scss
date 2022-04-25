@@ -4,21 +4,9 @@
 
 @media screen and (max-width: 1024px){
     /* CardVenta */
-
     .card-title {
         font-size: 14px;
     }
-
-    /* page Quienes somos */
-
-    /* !!invertir orden!! */
-
-    /* Page Ingresar */
-
-    .Ingresar__contenedor legend {
-        font-size: 40px;
-    }
-
 }
 
 /* MOBILE */
@@ -34,31 +22,4 @@
     .nav__item--oculto {
         display: block;
     }
-
-    .Ingresar__datos--button {
-        height: 32px;
-        width: 78px;
-    }
-
-    /* Page Ingresar */
-
-    .Ingresar__contenedor legend {
-        font-size: 30px;
-    }
-
-    .Ingresar__datos--grid {
-        grid-template-areas:
-        "name name"
-        "apellido apellido"
-        "email email"
-        "comentario comentario"
-        "button button";
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-        grid-template-columns: 1fr;
-    }
-
-    .Ingresar__Toppic textarea {
-        columns: 20;
-    }
-
 }

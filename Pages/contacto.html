@@ -22,6 +22,7 @@
 
 <body>
     <article>
+        <!-- header -->
         <header class="header">
             <div class="header__contenedor">
                 <div>
@@ -32,39 +33,36 @@
                 <nav class="nav" > 
                     <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
                     <ul class="nav__lista" id="sidebar">
-                        <li class="nav__item">
-                            <div class="dropdown">
-                                <a class="nav__enlace dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Producto
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <li><a class="nav__enlace" class="dropdown-item" href="../Pages/producto.html">Collecion 2022</a></li>
-                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Cocina</a></li>
-                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Sala de estar</a></li>
-                                </ul>
-                              </div>
+                        <li class="nav__item"> 
+                            <a class="nav__enlace" href="../Pages/proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__enlace" href="../Pages/quienes somos.html">Quienes somos</a>
+                            <div class="dropdown">
+                                <a class="nav__enlace dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Producto</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="nav__enlace" class="dropdown-item" href="../Pages/producto.html">Collecion 2022</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="../Pages/404.html">Sala de estar</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="../Pages/404.html">Dormitorio</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="../Pages/404.html">Comedor</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="../Pages/404.html">Oficina</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__enlace" href="../Pages/quienes somos.html">Nosotros</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__enlace" href="../Pages/contacto.html">Contacto</a>
                         </li>
-                        <li class="nav__item"> 
-                            <a class="nav__enlace" href="../Pages/proyectos.html">Proyectos</a>
-                        </li>
                         <li >
-                            <a class="nav__enlace btn-open-sidebar" href="#">x</a>
+                            <a class="nav__enlace btn-open-sidebar" href="#">X</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-    
+        <!-- main -->
         <main>
-            <section> <!--- mapa de localizacion de locales --->
-            </section>
-    
             <section class= "Ingresar" data-aos="fade-up" data-aos-duration="2000" >
                 <div class="container-fluid py-4">
                     <div class="row">
@@ -87,19 +85,19 @@
                                         <textarea class="form-control mb-3 resize-none" id="comentario" rows="3" placeholder="Comentario" aria-label="comentario"></textarea>
                                     </div>
                                     <div>
-                                        <button class="Ingresar__datos--button mb-3">ingresar</button>
+                                        <button type="submit" value="enviar" class="Ingresar__datos--button mb-3">Enviar</button>
                                     </div>
                                 </fieldset>
                             </form>
                         </div>
                         <div class="col-12 col-md-6">
-                            <img class="img-fluid" src="../Imagenes/ambiente.jpg" alt="ambiente sala">
+                            <img class="img-fluid" src="../Imagenes/ambiente contacto.jpg" alt="ambiente sala">
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        
+        <!-- footer -->
         <footer class="footer"> 
             <div class="footer__contenedor" >
                 <div>
