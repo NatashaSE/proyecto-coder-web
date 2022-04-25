@@ -3,6 +3,7 @@
 .header{
     background-color: white;
     box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0rem;
     padding: 1rem;
     
     position: relative;
@@ -12,46 +13,63 @@
     }
 
     &__contenedor {
-        max-width: 90%;
         margin: 0 auto;
-        height: 100%;
         @include Displayflex(row, space-between, center, center);
-
+        @media screen and (max-width: 1024px){
+            margin-left: -1rem;
+        }
     }
 
     &__marca {
-        display: inline-block;
-        @include Image(auto, 3rem)
+        @include Image(auto, 2.5rem)
         padding: 0.5rem 1rem;
+    }
+}
 
-        @media screen and (max-width: 1024px){
-            height: 2.5rem;
-        }
+.nav__item {
+    margin-left: 1rem;
+
+    &--oculto {
+        display: none;
     }
 }
 
 .nav__lista {
     display: flex;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 730px) {
         flex-wrap: wrap;
-        gap: 20px;
+        background-color: #e7e7e7;
+        width: 60%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+        transition: transform 0.5s;
+        z-index: 100;
     }
 }
 
 .nav__enlace {
-    color: map-get($map: $color, $key: texto);
+    color: map-get($map: $color, $key: button);
     font-size: 0.96rem;
+    font-weight: 400;
     text-decoration: none;
     letter-spacing: 0.1rem;
     padding: 0.5rem 1rem;
     display: inline-block;
 
     &:hover {
-        color: map-get($map: $color, $key: button);
+        color: map-get($map: $color, $key: texto);
+        font-weight: 500;
     }
 }
-/* Menu producto */
 
 .nav-link {
     color: map-get($map: $color, $key: texto);
@@ -61,32 +79,28 @@
     }
 }
 
-.dropdown-menu {
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    min-width: 12rem;
-    padding: 0.5rem 0;
-    margin: 0;
-    font-size: 1rem;
-    color: map-get($map: $color, $key: texto);
+/* Menu producto */
+
+.dropdown-menu.show {
+    min-width: 10rem;
     text-align: center;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 0.25rem;
-    letter-spacing: 0.1rem;
+    color: map-get($map: $color, $key: texto);
     &:hover {
         color: map-get($map: $color, $key: button);
+    }
+    @media screen and (max-width: 600px) {
+        min-width: 17rem;
     }
 }
 /* Menu Lateral */
 
 .btn-open-sidebar {
     display: none;
-}
 
-.nav__item--oculto {
-    display: none;
+    @media screen and (max-width: 730px) {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: map-get($map: $color, $key: texto);
+    }
 }

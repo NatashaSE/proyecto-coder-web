@@ -23,7 +23,6 @@
 
         @media screen and (max-width: 600px) {
             grid-template-columns: 1fr;
-            grid-template-rows: 2fr;
         }
         
         &--invertido {
@@ -35,8 +34,6 @@
         @include Displaygrid( 3, space-between)
         margin: 1rem;
         align-content: center;
-        text-align: left;
-        position: relative;
 
         @media screen and (max-width: 600px){
             justify-content: center;
@@ -89,4 +86,23 @@
 
 .rewards__item--img {
     padding: 0;
+}
+
+.Presentacionerror {
+    @include Displayflex(column, center, center, center)
+    margin: 2rem;
+    padding: 1rem;
+    
+    h1 {
+        @include Text(map-get($map: $color, $key: texto), 4rem, bold, center);
+    }
+
+    h2 {
+        @include Text(map-get($map: $color, $key: texto), 2rem, bold, center);
+        padding: 1rem;
+    }
+
+    p {
+        @include Text(map-get($map: $color, $key: texto), 1rem, normal, center);
+    }
 }

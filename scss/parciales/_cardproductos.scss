@@ -1,21 +1,26 @@
-/* Mejores productos mainpage */
+/* Carosel productos */
 
 .CardVenta {
     background-color: map-get($map: $color, $key: fondo);
-    padding: 2rem;  
+    padding: 1rem;  
 
     &__contenedor {  
         background-color: map-get($map: $color, $key: fondo);  
         @include Displaygrid(repeat(4, 1fr), space-evenly);
-        padding: 1rem;
         position: relative;
         height: 100%;
+
         @media screen and (max-width: 600px) {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
             height: auto;
         }
+        @media screen and (max-width: 300px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0rem;
+        }
     }
+    
     h1 {
         @include Text(map-get($map: $color, $key: texto), 16px, bold italic, center)
     }
@@ -27,14 +32,12 @@
         position: relative;
 
         img {
-            @include Image(100%, 50%)
+            @include Image(100%, 100%)
         }
 
         h2 {
             margin: auto;
             @include Text(map-get($map: $color, $key: texto), 16px, bold, center)
-            padding-top: 10%;
-            width: 50%;
             @media screen and (max-width: 1024px) {    
                 font-size: 14px;
             }
@@ -45,7 +48,6 @@
             @include Text(map-get($map: $color, $key: texto), 14px, normal, center)
             padding-top: 1rem;
             padding-bottom: 1rem;
-            width: 50%;
 
             @media screen and (max-width: 1024px) {    
                 font-size: 12px;
@@ -70,13 +72,21 @@
                 margin: auto;
             }
         }
-
     }
-
 }
 
+.cardcontenedor {
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0;
+	transform: scale(0.95);
+	transition: box-shadow 0.5s, transform 0.5s;
+	&:hover{
+		transform: scale(1);
+		box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+	}
+}
 
-/* Page producto */
+/* carrosel productos diferente fondo */
 
 .CardVentacollection {
     @extend .CardVenta;
@@ -85,15 +95,154 @@
     &__contenedor {
         @extend .CardVenta__contenedor;
         background-color:  white;
+        
         @media screen and (max-width: 600px) {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
             height: auto;
         }
+        @media screen and (max-width: 300px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0rem;
+        }
     }
-   
 }
 
-.CardImagen {
-    @include Image(100%, 100%)
+.card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+	&--image {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		img {
+			width: 140%;
+			height: 140%;
+			object-fit: cover;
+		}
+	}
+
+	&--info {
+		--size: 20px;
+		width: var(--size);
+		height: var(--size);
+		background: rgba(0, 0, 0, 0.75);
+		border-radius: 2px;
+		position: absolute;
+		transition: width 550ms ease, height 550ms ease, right 550ms ease, background 550ms ease;
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(
+				to top,
+				rgba(0, 0, 0, 0.65) 0%,
+				rgba(0, 0, 0, 0.25) 50%,
+				transparent 100%
+			);
+			z-index: 1;
+			opacity: 0;
+			transition: opacity 550ms ease;
+		}
+
+		&.info--1 {
+			bottom: 30%;
+			right: 65%;
+			.info--image {
+				img {
+					top: -140%;
+					left: 0%;
+				}
+			}
+		}
+
+		&.info--2 {
+			bottom: 45%;
+			right: 40%;
+			.info--image {
+				img {
+					right: -40%;
+					bottom: -100%;
+				}
+			}
+		}
+
+		&.info--3 {
+			bottom: 25%;
+			right: 26%;
+			.info--image {
+				img {
+					right: 0%;
+					bottom: -50%;
+				}
+			}
+		}
+
+		.info--text {
+			display: block;
+			position: absolute;
+			left: 10%;
+			bottom: 5%;
+			@include Text(white, 1rem, bold, center)
+			white-space: nowrap;
+			z-index: 2;
+			opacity: 0;
+			transform: translateY(25%);
+			transition: opacity 250ms ease, transform 250ms ease;
+		}
+
+		.info--image {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			img {
+				position: absolute;
+				width: 300%;
+				height: 300%;
+				object-fit: cover;
+				opacity: 0;
+				transition: opacity 550ms ease;
+			}
+		}
+	}
+
+	&:hover {
+		.card--info {
+			--size: 100px;
+			&::after {
+				opacity: 1;
+			}
+			&.info--1 {
+				right: 65%;
+				transition-delay: 100ms;
+			}
+			&.info--2 {
+				right: 40%;
+			}
+			&.info--3 {
+				right: 26%;
+			}
+			.info--image {
+				img {
+					opacity: 1;
+				}
+			}
+			.info--text {
+				transition-delay: 550ms;
+				opacity: 1;
+				transform: translateY(0%);
+			}
+		}
+	}
 }

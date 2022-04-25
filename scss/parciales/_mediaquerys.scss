@@ -27,30 +27,6 @@
 
     /* header*/
 
-    .btn-open-sidebar {
-        display: inline-block;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        color: map-get($map: $color, $key: texto);
-    }
-
-    .nav__lista {
-        background-color: #e7e7e7;
-        width: 80%;
-        max-width: 400px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        padding: 1rem;
-        transition: transform 0.5s;
-        z-index: 100;
-    }
-
     #sidebar:target {
         transform: translateX(0);
     }
@@ -62,13 +38,6 @@
     .Ingresar__datos--button {
         height: 32px;
         width: 78px;
-    }
-
-    /* CardVenta */
-    
-    .CardVenta__contenedor {    
-        grid-template-columns: repeat(1, 1fr);
-        gap: 4rem;
     }
 
     /* Page Ingresar */

@@ -2,16 +2,12 @@
 
 .footer {
     padding: 2rem 1rem;
+    background-color: white;
 
     &__contenedor {
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: white;
         @include Displayflex(column, space-between, center, center);
-
         p {
             @include Text(map-get($map: $color, $key: texto), 0.96rem, normal, center);
-
             @media screen and (max-width: 1024px){
                 font-size: 0.6rem;
             }

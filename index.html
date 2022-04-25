@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marca - Home</title>
+    <!--titulo y descripcion-->
+    <title>Carieva - Home</title>
     <meta name="descripcion" content="Estudio de decoración de interiores y diseño interior. Venta de productos y asesoramiento personalizado para crear tu perfecto hogar">
     <meta name="keywords" content="muebles, decoracion, hogar, producto, interior, estudio, ambiente, casa, departamento, interiorista, design">
     <link rel="stylesheet" href="css/estilos.css">
+    <!--icono navegador-->
+    <link rel=“shortcut icon” href="./Imagenes/logo_navegador.png">
     <!--iconos -->
     <script src="https://kit.fontawesome.com/248eca55ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -19,6 +22,7 @@
 
 <body>
     <article>
+        <!-- header -->
         <header class="header">
             <div class="header__contenedor">
                 <div>
@@ -29,35 +33,35 @@
                 <nav class="nav" > 
                     <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i></a>
                     <ul class="nav__lista" id="sidebar">
-                        <li class="nav__item">
-                            <div class="dropdown">
-                                <a class="nav__enlace dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Producto
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <li><a class="nav__enlace" class="dropdown-item" href="./Pages/producto.html">Collecion 2022</a></li>
-                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Cocina</a></li>
-                                  <li><a class="nav__enlace" class="dropdown-item" href="#">Sala de estar</a></li>
-                                </ul>
-                              </div>
+                        <li class="nav__item"> 
+                            <a class="nav__enlace" href="./Pages/proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__enlace" href="./Pages/quienes somos.html">Quienes somos</a>
+                            <div class="dropdown">
+                                <a class="nav__enlace dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Producto</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="nav__enlace" class="dropdown-item" href="./Pages/producto.html">Collecion 2022</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="./Pages/404.html">Sala de estar</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="./Pages/404.html">Dormitorio</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="./Pages/404.html">Comedor</a></li>
+                                  <li><a class="nav__enlace" class="dropdown-item" href="./Pages/404.html">Oficina</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__enlace" href="./Pages/quienes somos.html">Nosotros</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__enlace" href="./Pages/contacto.html">Contacto</a>
                         </li>
-                        <li class="nav__item"> 
-                            <a class="nav__enlace" href="./Pages/proyectos.html">Proyectos</a>
-                        </li>
                         <li >
-                            <a class="nav__enlace btn-open-sidebar" href="#">❌</a>
+                            <a class="nav__enlace btn-open-sidebar" href="#">X</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-    
+        <!-- main -->
         <main>
             <!--- Presentacion de producto --->
             <section class="presentacion" > 
@@ -68,7 +72,7 @@
                         <button class="presentacion__left">Ver mas</button>    
                     </div>
                     <div>
-                        <img class=" img-fluid" src="./Imagenes/ambiente.jpg" alt="ambiente sala">
+                        <img class=" img-fluid" src="./Imagenes/ambiente.jpg" alt="ambiente sala de estar">
                     </div>
                 </div>
             </section>
@@ -95,44 +99,38 @@
                 <h1 class="CardVenta">Best Sellers</h1>
                 <div class="container-fluid">
                     <div class="row">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <div class="CardVenta__contenedor">
-                                    <div class="card text-center border-light CardVenta__producto bg-transparent" >
-                                        <img src="./Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="producto silla">
-                                        <div class="card-body">
-                                            <h2 class="card-title">Silla Wegner</h2>
-                                            <p class="card-text">Sala de estar</p>
-                                            <button class="CardVenta__producto">Ver mas</button>
-                                        </div>
-                                    </div>
-                                    <div class="card text-center border-light CardVenta__producto bg-transparent" >
-                                        <img src="./Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="producto silla">
-                                        <div class="card-body">
-                                            <h2 class="card-title">Silla Wegner</h2>
-                                            <p class="card-text">Sala de estar</p>
-                                            <button class="CardVenta__producto">Ver mas</button>
-                                        </div>
-                                    </div>
-                                    <div class="card text-center border-light CardVenta__producto bg-transparent" >
-                                        <img src="./Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="producto silla">
-                                        <div class="card-body">
-                                            <h2 class="card-title">Silla Wegner</h2>
-                                            <p class="card-text">Sala de estar</p>
-                                            <button class="CardVenta__producto">Ver mas</button>
-                                        </div>
-                                    </div>
-                                    <div class="card text-center border-light CardVenta__producto bg-transparent" >
-                                        <img src="./Imagenes/silla_wegner.png" class="card-img-top CardVenta__producto" alt="producto silla">
-                                        <div class="card-body">
-                                            <h2 class="card-title">Silla Wegner</h2>
-                                            <p class="card-text">Sala de estar</p>
-                                            <button class="CardVenta__producto">Ver mas</button>
-                                        </div>
-                                    </div>
+                        <div class="CardVenta__contenedor">
+                            <div class="card text-center border-light CardVenta__producto cardcontenedor bg-transparent" >
+                                <img src="./Imagenes/Silla lm92t.png" class="card-img-top CardVenta__producto" alt="producto Silla lm92t">
+                                <div class="card-body">
+                                    <h2 class="card-title">Silla LM92T</h2>
+                                    <p class="card-text">Sala de estar</p>
+                                    <button class="CardVenta__producto">Ver mas</button>
                                 </div>
-                              </div>
+                            </div>
+                            <div class="card text-center border-light CardVenta__producto cardcontenedor bg-transparent" >
+                                <img src="../imagenes/Sillon wegner.png" class="card-img-top CardVenta__producto" alt="producto Sillon wegner">
+                                <div class="card-body">
+                                    <h2 class="card-title">Sillon wegner</h2>
+                                    <p class="card-text">Sala de estar - Dormitorio</p>
+                                    <button class="CardVenta__producto">Ver mas</button>
+                                </div>
+                            </div>
+                            <div class="card text-center border-light CardVenta__producto cardcontenedor bg-transparent" >
+                                <img src="./Imagenes/Silla kaiak.png" class="card-img-top CardVenta__producto" alt="producto Silla kaiak">
+                                <div class="card-body">
+                                    <h2 class="card-title">Silla Kaiak</h2>
+                                    <p class="card-text">Sala de estar - Dormitorio</p>
+                                    <button class="CardVenta__producto">Ver mas</button>
+                                </div>
+                            </div>
+                            <div class="card text-center border-light CardVenta__producto cardcontenedor bg-transparent" >
+                                <img src="../Imagenes/Sillon wegner queen.png" class="card-img-top CardVenta__producto" alt="producto Sillon wegner queen">
+                                <div class="card-body">
+                                    <h2 class="card-title">Sillon wegner queen</h2>
+                                    <p class="card-text">Sala de estar - Dormitorio</p>
+                                    <button class="CardVenta__producto">Ver mas</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,17 +140,18 @@
             <section data-aos="fade-up" data-aos-duration="2000" class="presentacion--invertido " > 
                 <div class="presentacion__contenedor--invertido">
                     <div>
-                        <img class="img-fluid" src="./Imagenes/ambiente.jpg" alt="ambiente sala">
+                        <img class="img-fluid" src="./Imagenes/ambiente nueva collecion.jpg" alt="ambiente sala de estar  de la nueva collecion">
                     </div>
                     <div class="presentacion__left" >
-                        <h1 class="presentacion__left">Nueva coleccion</h1>
+                        <h1 class="presentacion__left">Nueva coleccion 2022</h1>
                         <p class="presentacion__left">Con detalles románticos y decididos, nuestra colección de primavera ofrece elementos divertidos para su selección personal.</p>
-                        <button class="presentacion__left">Ver mas</button>    
+                        <button class="presentacion__left" href="./Pages/producto.html">Ver mas
+                        </button>    
                     </div>
                 </div>
             </section>
         </main>
-    
+        <!-- footer -->
         <footer class="footer"> 
             <div class="footer__contenedor" >
                 <div>
